@@ -33,9 +33,10 @@ function App() {
     }
   }, 1000);
 
-  const handleStartTimer = (duration?: number) => {
-    if (duration) {
-      setMinutes(duration);
+  const handleStartTimer = (mins?: number) => {
+    if (mins) {
+      setMinutes(mins);
+      setSeconds(0);
     }
     setStartTimer(true);
   }
