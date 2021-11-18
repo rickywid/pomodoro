@@ -1,13 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Work+Sans:wght@300&display=swap');
+
 body {
+  text-align: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poiret One', cursive;
+  padding: 15px;
+  background: linear-gradient(204deg, rgba(2,0,36,1) 0%, rgba(173,234,217,0.5200280795912116) 53%); 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+}
+
+main {
+  margin: auto;
+  width: 1000px;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  border-top: 1px solid black;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+
+button {
+  border: none;
+  background: none;
+  font-weight: normal;
+  transition: border 1s, color .3s;
+}
+
+button:hover {
+  cursor: pointer;
+  border: none;
+  color: #555;
+  transition: border 1s, color .3s;
+}
+
+button:disabled {
+  background: none;
+  color: #959595;
+  cursor: not-allowed;
+}
+
+.countdown {
+  margin: 85px 0;
+}
+
+.seconds, .minutes {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+}
+
+.minutes {
+  font-size: 242px;
+  line-height: 0.8;
+}
+
+.seconds {
+  color: #adead9;
+  font-size: 186px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+ol {
+  font-family: 'Work Sans', sans-serif;
+  text-align: initial;
+}
+
+.break {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  text-decoration: underline;
+  margin: 0;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.break::after {
+  content: ":";
+}
+
+.info {
+  text-align: initial;
+  margin-top: 100px;
+}
+
+.preview-audio {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.preview-audio img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+
+
+@media only screen and (min-width: 730px) {
+  body {
+    padding: 0;
+  }
+
+  .minutes::after {
+    content: ":";
+  }
+
+  .seconds {
+    color: #adead9;
+    font-size: 242px;
+  }
+
+  .countdown {
+    margin: 130px 0;
+  }
+  
+  .seconds, .minutes {
+    width: 420px;
+  }
 }
