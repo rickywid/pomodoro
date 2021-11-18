@@ -65,13 +65,13 @@ function App() {
             <button onClick={() => handleStartTimer(5)}>SHORT</button>
             <button onClick={() => handleStartTimer(15)}>LONG</button>
             <div className="preview-audio">
-              <img src={AudioImg} alt="audio" /><button onClick={playAudio}>Alarm sound</button>
+              <img src={AudioImg} alt="audio" /><button onClick={playAudio}>ALARM SOUND</button>
             </div>
           </div>
         </div>
 
         <div className="info">
-          <p>HOW IT WORKS:</p>
+          <p className="how-it-works">HOW IT WORKS:</p>
           <ol>
             <li>Pick a task.</li>
             <li>Start a 25 minute timer.</li>

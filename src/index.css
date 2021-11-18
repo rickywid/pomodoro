@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: 'Poiret One', cursive;
   padding: 15px;
-  background: linear-gradient(204deg, rgba(2,0,36,1) 0%, rgba(173,234,217,0.5200280795912116) 53%); 
+  background: #c6c1aa; 
 }
 
 .container {
@@ -41,7 +41,7 @@ button {
 button:hover {
   cursor: pointer;
   border: none;
-  color: #555;
+  color: #fffeb2;
   transition: border 1s, color .3s;
 }
 
@@ -67,7 +67,7 @@ button:disabled {
 }
 
 .seconds {
-  color: #adead9;
+  color: #eae9ad;
   font-size: 186px;
 }
 
@@ -111,7 +111,9 @@ ol {
   margin-right: 10px;
 }
 
-
+.how-it-works {
+  text-decoration: underline;
+}
 
 
 @media only screen and (min-width: 730px) {
@@ -124,7 +126,6 @@ ol {
   }
 
   .seconds {
-    color: #adead9;
     font-size: 242px;
   }
 
