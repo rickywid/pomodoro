@@ -24,7 +24,7 @@ function App() {
         } else {
           playAudio();
           setStartTimer(false);
-          setMinutes(1);
+          setMinutes(25);
           setSeconds(0);
         }
       } else {
